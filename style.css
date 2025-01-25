@@ -1,0 +1,130 @@
+/* Styling for the top bar */
+.TopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #131921; /* Dark Amazon-like background */
+}
+
+.TopBarTags {
+    text-decoration: none;
+    height: 50px;
+    width: auto;
+}
+
+#amazonLogo img {
+    height: 50px; /* Adjust size of logo */
+    width:auto;
+}
+
+.TopBar a {
+    color: white;
+    text-decoration: none;
+    transition:all 0.3s ease;
+}
+.TopBar a:hover {
+    border: 1px solid white;
+    /* background-color: rgba(255, 255, 255, 0.1) */
+}
+.TopBar p {
+    color: white;
+    font-size: 14px;
+}
+
+/* Optional: Style the text in the link */
+.TopBar b {
+    font-weight: bold;
+}
+.Location p {
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+}
+.TopBarTags p b {
+    display: block;
+    font-size: 1.2em;
+}
+#Location{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+#Location div {
+    line-height: 0.1;
+}
+#Location img {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+body {
+    background-color: #FFD700;
+}
+#Country {
+    display: flex;
+    align-items: center;
+}
+.countryContainer {
+ display: flex;
+ align-items: center;
+ height: 100%;
+ padding: 0;
+ margin: 0;
+}
+.Flag {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+.countryContainer em {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.DropDownLogo {
+    width: 15px;
+    height: auto;
+    align-items: flex-end;
+ }
+/* .SignInContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    line-height: 0.1;
+} */
+.SignInContainer b{
+    display: block;
+    margin-right: 5px;
+}
+.SignInContainer {
+    line-height: 0.1;
+}
+.AccountsLists b{
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+}
+.AccountsLists {
+    display: flex;
+    align-items: center;
+}
+.OrdersContainer {
+    display: block;
+}
+#Orders {
+    line-height: 0.1;
+}
+#Cart {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+#Cart img {
+    margin-right: 5px;
+    width: 40px;
+}
+
+
