@@ -1,16 +1,26 @@
 /* Styling for the top bar */
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .TopBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #131921; /* Dark Amazon-like background */
+    margin: 0;
+    width: 100%;
+    height: 40px;
 }
 
 .TopBarTags {
     text-decoration: none;
     height: 50px;
     width: auto;
+    height:40px ;
 }
 
 #amazonLogo img {
@@ -126,5 +136,101 @@ body {
     margin-right: 5px;
     width: 40px;
 }
+#search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #8B4513; /* Brown border */
+    border-radius: 5px; /* Unified border-radius */
+    overflow: hidden; /* Ensures rounded corners apply properly */
+    width: fit-content;
+}
 
+#searchInput {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    outline: none; /* Removes focus border */
+    flex: 1;
+}
+
+#categoryDropDown {
+    background-color: #d4d4d4;
+    border: none; /* Remove individual border */
+    padding: 8px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#SearchButton {
+    background-color: #f3a847;
+    border: none;
+    padding: 8px ;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Searchlogo {
+    width: 40px;
+    height: 40px;
+}
+.secondTopBar {
+    display: flex;
+    align-items: center;
+    background-color:#232F3E;
+    padding: 10px 20px;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20px;
+
+}
+#LineBar {
+    color: white;
+    width: 40px;
+    height: auto;
+    margin-right: 0px;
+}
+.secondBar {
+    display: inline-block;
+    color: white ;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 14px;
+    position: relative;
+    padding: 4px 12px;
+    transition: color 0.3s ease-in-out;
+}
+#secondBarCategory {
+    display: flex;
+    align-items: center;
+}
+#LineBar {
+    width: 40px;
+    margin-right: 5px;
+}
+
+
+.secondBar:hover {
+    border: 1px solid white; /* Change text color on hover */
+}
+
+.secondBar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.secondBar:hover::after {
+    transform: scaleX(1);
+}
 

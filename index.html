@@ -11,42 +11,67 @@
 <body>
     <header>
         <div class="TopBar">
-            <a href="#" class="TopBarTags" id="amazonLogo"><img src="Images/AmazonLogo.png" alt="Amazon Logo"></a>
-            <a class="TopBarTags" href="https://www.amazon.com/ref=nav_logo" id="Location"><img src="Images/locationLogo.png"
-                    alt="locationLogo">
+            <a href="https://www.amazon.com/ref=nav_logo" class="TopBarTags" id="amazonLogo"><img src="Images/AmazonLogo.png" alt="Amazon Logo"></a>
+            <a class="TopBarTags" href="https://www.amazon.com/ref=nav_logo" id="Location"><img
+                    src="Images/locationLogo.png" alt="locationLogo">
                 <div>
                     <p>Deliver to</p>
                     <p><b>Pakistan</b></p>
                 </div>
             </a>
-            <a class="TopBarTags" href="https://www.amazon.com/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fref%3Dnav_logo&ref_=topnav_lang_ais" id="Country">
+            <div class="TopBarTags" id="search">
+                <select name="category" id="categoryDropDown">
+                    <option value="AllDepartment">All Departments</option>
+                    <option value="Arts & Crafts">Arts & Crafts</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Baby">Baby</option>
+                    <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+                    <option value="Books">Books</option>
+                    <option value="Boy's Fashion">Boy's Fashion</option>
+                    <option value="Computers">Computers</option>
+                    <option value="Deals">Deals</option>
+                    <option value="Electronics">Electronics</option>
+                </select>
+                <input type="text" placeholder="  Search Here" id="searchInput">
+                <button id="SearchButton"><img src="Images/Searchlogo.png" alt="Searchlogo" id="Searchlogo"></button>
+            </div>
+            <a class="TopBarTags"
+                href="https://www.amazon.com/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fref%3Dnav_logo&ref_=topnav_lang_ais"
+                id="Country">
 
                 <div class="countryContainer"><img src="Images/usaFlagLogo.png" alt="Usa Flag" class="Flag">
                     <em>EN</em>
                     <img src="Images/DropDownLogo.png" alt="DropDownLogo" class="DropDownLogo">
                 </div>
             </a>
-            <a class="TopBarTags" id="SignIn" href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fcustomer-preferences%2Fedit%3Fie%3DUTF8%26preferencesReturnUrl%3D%252Fref%253Dnav_logo%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+            <a class="TopBarTags" id="SignIn"
+                href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fcustomer-preferences%2Fedit%3Fie%3DUTF8%26preferencesReturnUrl%3D%252Fref%253Dnav_logo%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
                 <div class="SignInContainer">
                     <p>Hello,sign in</p>
                     <div class="AccountsLists">
-                    <b>Accounts & Lists</b>
-                    <img src="Images/DropDownLogo.png" alt="DropDownLogo" class="DropDownLogo">
-                </div>
+                        <b>Accounts & Lists</b>
+                        <img src="Images/DropDownLogo.png" alt="DropDownLogo" class="DropDownLogo">
+                    </div>
                 </div>
             </a>
-            <a class="TopBarTags" id="Orders" href="">
+            <a class="TopBarTags" id="Orders" href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fcustomer-preferences%2Fedit%3Fie%3DUTF8%26preferencesReturnUrl%3D%252Fref%253Dnav_logo%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
                 <div class="OrdersContainer">
                     <p>Returns</p>
                     <b>& Orders</b>
                 </div>
             </a>
-            <a class="TopBarTags" id="Cart" href="">
+            <a class="TopBarTags" id="Cart" href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart">
                 <img src="Images/shoppingCartLogo.png" alt="shoppingCartLogo">
                 <b>Cart</b>
             </a>
-
-
+        </div>
+        <div class="secondTopBar">
+            <a class="secondBar" id="secondBarCategory" href=""><img src="Images/whitebar.png" alt="LineBar" id="LineBar">All</a>
+            <a class="secondBar" href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb">Today's Deals</a>
+            <a class="secondBar" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice">Customer Service</a>
+            <a class="secondBar" href="https://www.amazon.com/registries?ref_=nav_cs_registry&ref_=nav_cs_registry">Registry</a>
+            <a class="secondBar" href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc">Gift Card's</a>
+            <a class="secondBar" href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell">Sell</a>
         </div>
     </header>
     <footer></footer>
